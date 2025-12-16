@@ -1,38 +1,115 @@
-.App {
+
+body{
+  background-color: #b9a7a7 !important;
+}
+.cart-box{
+  background-color: #fff;
+  color: green;
+  font-size: 30px;
+  width: fit-content;
+  border-radius: 5px;
+}
+.green{
+  color: green;
+}
+.header .form-control{
+  border: unset;
+  border-radius: 10px;
+}
+.count-order{
+  position: absolute;
+  top: 5px;
+  color: green;
+ 
+  right: 36px;
   text-align: center;
 }
+.cate-icon{
+  font-size: 50px;
+  color: green;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.category-box{
+background-color: #fff;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+transition: all 0.3s ease;
+}
+.category-box:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.active-category{
+  background-color: rgb(66, 196, 66) !important;
+  color: #fff !important;
+}
+.active-category .cate-icon{
+  color: #fff !important;
+}
+.food-card{
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.food-price{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: green;
+}
+.btn{
+background-color: rgb(66, 196, 66) !important;
+color:#fff !important;
+width: 100%;
+}
+@media(min-width:576px){
+.img-height{
+  height: 180px !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
+}
+@media(max-width:575px){
+  .img-height{
+  height: 280px !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-card {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+}
+
+.offcanvas {
+  width: 400px !important;
+}
+
+@media(max-width:768px){
+  .offcanvas {
+    width: 320px !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Custom 7 columns for large screens and above */
+@media (min-width: 992px) {
+  .row-cols-lg-7 > * {
+    flex: 0 0 auto !important;
+    width: 14.2857% !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.form-control:focus{
+  box-shadow: none !important;
+}
+.btn-remove{
+  background: none !important;
+  border: none !important;
 }
